@@ -1,0 +1,26 @@
+{
+    "name" : "Meth Helper",
+    "description" : "Йо сучара, ща научим варить тебя тот самый мет",
+    "author" : "SenjuHT",
+    "contact" : "https://steamcommunity.com/id/SenjuHT/",
+    "version" : "2.0",
+	"image" : "icon.png"
+    "hooks" : [
+   
+	{
+		"hook_id" : "lib/managers/DialogManager"
+		"script_path" : "ingredients.lua"
+	}
+    ],
+	"keybinds" : [
+		{
+			"keybind_id" : "MH-GUI_keybind",
+			"name" : "Toggle Meth Helper",
+			"description" : "Turns the Meth Helper mod on and off",
+			"script_path" : "toggle.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}
